@@ -10,8 +10,12 @@
     --hero-footer-color:#2F303A;
     --bgc-main: #ffffff;
     --bgc-section: #F5F4FA;
+    --logo-text-white:#ffffff;
+    --logo-text-black: #000000;
+    --text-color-white: #ffffff;
  }
-.page{
+.page
+{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--bgc-main);
@@ -20,34 +24,95 @@
 .list
 {
     list-style: none;
-  }
+}
 .link
 {
     font-style: normal;
     text-decoration: none;
     color: var(--primary-text-color);
 }
-.logo-text{
+/* Header-section */
+.logo-text
+{
 font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
-line-height: 1.2;
+line-height: 1.19;
+letter-spacing: 0.03em;
 color: var(--accent-text-color);
 }
 .logo-studio-black
 {
-    text-decoration: none;
-color: #000;
+    color: var(--logo-text-black);
 }
-.logo-studio-white{
-    text-decoration: none;
-    color: var(--bgc-main);
+.logo-studio-white
+{
+   color: var(--logo-text-white);
 }
-/* .site-nav{
-    text-decoration: none;
-    color: var(--primary-text-color);
 
-} */
+ /* Navigation-section */
+.site-nav-list .site-nav-link.current
+{
+  color: var(--accent-text-color);  
+}
+.site-nav-link:
+{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+.contact-item
+{    
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--title-text-color);
+}
+
+/* Hero-section */
+.hero-field
+{
+    background-color: var(--hero-footer-color);
+}
+.hero-title
+{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+}
+.button
+{
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+cursor: pointer;
+}
+.button.primary
+{
+    background-color: var(--accent-text-color);
+    color: var(--text-color-white);
+}
+.button.secondary
+{
+    background-color: var(--bgc-section);
+    color: var(--primary-text-color);
+}
+
+/* interactiv-elements */
 .logo-text:focus,
 .logo-text:hover,
 .site-nav-link:focus,
@@ -55,132 +120,125 @@ color: #000;
 .contact-item:focus,
 .contact-item:hover,
 .footer-list-item:focus,
-.footer-list-item:hover
-.footer-list-item:focus,
-.footer-list-item:hover
+.footer-list-item:hover,
 {
     color: var(--accent-text-color); 
 }
- 
-.site-nav-link:{
-color: var(--primary-text-color);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.1;}
-
-.site-nav-list .site-nav-link.current{
-  color: var(--accent-text-color);  
-}
-.hero-field{
-    background-color: var(--hero-footer-color);
-}
-.footer-field{
-background-color: #2F303A;
-}
-.hero-title{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.4;
-text-align: center;
-letter-spacing: 0.06em;
-color: var(--bgc-main);
-text-transform: uppercase;
-}
-.button{
-font-family: inherit;
-font-weight: bold;
-font-size: 16px;
-line-height: 1.9;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-border-radius: 4px;
-border-style: none;
-cursor: pointer;
-}
-.button.primary{
-    background-color: var(--accent-text-color);
-    color: var(--bgc-main);
-}
-.button.secondary{
-    background-color: var(--bgc-section);
-    color: var(--primary-text-color);
+.button.secondary:active,
+.button.secondary:focus
+{
+    background-color: var(--accent-text-color); 
 }
 
-.benefits-title{
-font-weight: bold;
+.section-title
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Benefits-section */
+.benefits-title
+{
+font-weight: 700;
 font-size: 14px;
-line-height: 1.1;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-text-color);
 }
-.benefits-item{
+
+.benefits-item
+{
 font-size: 14px;
-line-height: 1.7;
+line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
 }
-.team-section{
+/* Team-section */
+.team-section
+{
     background-color: var(--bgc-section);
 }
-.team-item{
+.team-item
+{
     background-color: var(--bgc-main);
 }
-.team-title
+.team-member
 {
 font-weight: 500;
 font-size: 16px;
-line-height: 1.2;
+line-height: 1.18;
 text-align: center;
+letter-spacing: 0.03em;
 }
-.team-member{
-    font-size: 16px;
-line-height: 1.2;
+.team-position
+{
+font-size: 16px;
+line-height: 1.18;
 text-align: center;
+letter-spacing: 0.03em;
 color: var(--title-text-color);
 }
-.portfolio-title-link{
-    font-weight: bold;
+/* portfolio-section */
+.portfolio-title-link
+{
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
-.portfolio-text{
+.portfolio-text
+{
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-
-
-
-
+.portfolio-button
+{   font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border:none;
+    cursor: pointer;
+    color: var(--primary-text-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus
+{
+    background-color: var(--accent-text-color);
+    color: var(--text-color-white);
+}
+.portfolio-button.primary
+{
+    background-color: var(--accent-text-color);
+    color: var(--text-color-white);
+}
+.portfolio-button.secondary
+{
+    background-color: var(--bgc-section);
+    color: var(--primary-text-color); 
+}
+/* footer-section */
+.footer-field
+{
+background-color: var(--hero-footer-color);
+}
 .footer-list-item
 { 
 font-size: 14px;
-line-height: 1.7;
+line-height: 1.71;
+letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
 .map-color-white{
-    color: white;
-}
-
-.text-color-blue{
-    color: var(--accent-text-color);
-}
-
-
-.contact-item
-{    
-font-weight: 500;
-font-size: 14px;
-line-height: 1.1;
-text-decoration: none;
-color: var(--title-text-color);
-}
-.contact-item.accent-color-blue{
-color: var(--accent-text-color);
+    color:var(--text-color-white);
 }
 
 
