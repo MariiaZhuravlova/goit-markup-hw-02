@@ -1,0 +1,186 @@
+/* Основнрой цвет шрифта #212121 */
+/* Второй цвет шрифта #757575 */
+/* цвет акцента #2196F3 */
+/* цвет фона #ffffff */
+:root
+{
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --hero-footer-color:#2F303A;
+    --bgc-main: #ffffff;
+    --bgc-section: #F5F4FA;
+ }
+.page{
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--bgc-main);
+}
+
+.list
+{
+    list-style: none;
+  }
+.link
+{
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.logo-text{
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+color: var(--accent-text-color);
+}
+.logo-studio-black
+{
+    text-decoration: none;
+color: #000;
+}
+.logo-studio-white{
+    text-decoration: none;
+    color: var(--bgc-main);
+}
+/* .site-nav{
+    text-decoration: none;
+    color: var(--primary-text-color);
+
+} */
+.logo-text:focus,
+.logo-text:hover,
+.site-nav-link:focus,
+.site-nav-link:hover,
+.contact-item:focus,
+.contact-item:hover,
+.footer-list-item:focus,
+.footer-list-item:hover
+.footer-list-item:focus,
+.footer-list-item:hover
+{
+    color: var(--accent-text-color); 
+}
+ 
+.site-nav-link:{
+color: var(--primary-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;}
+
+.site-nav-list .site-nav-link.current{
+  color: var(--accent-text-color);  
+}
+.hero-field{
+    background-color: var(--hero-footer-color);
+}
+.footer-field{
+background-color: #2F303A;
+}
+.hero-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.4;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--bgc-main);
+text-transform: uppercase;
+}
+.button{
+font-family: inherit;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+border-radius: 4px;
+border-style: none;
+cursor: pointer;
+}
+.button.primary{
+    background-color: var(--accent-text-color);
+    color: var(--bgc-main);
+}
+.button.secondary{
+    background-color: var(--bgc-section);
+    color: var(--primary-text-color);
+}
+
+.benefits-title{
+font-weight: bold;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-text-color);
+}
+.benefits-item{
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+.team-section{
+    background-color: var(--bgc-section);
+}
+.team-item{
+    background-color: var(--bgc-main);
+}
+.team-title
+{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+}
+.team-member{
+    font-size: 16px;
+line-height: 1.2;
+text-align: center;
+color: var(--title-text-color);
+}
+.portfolio-title-link{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+}
+.portfolio-text{
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--title-text-color);
+}
+
+
+
+
+.footer-list-item
+{ 
+font-size: 14px;
+line-height: 1.7;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.map-color-white{
+    color: white;
+}
+
+.text-color-blue{
+    color: var(--accent-text-color);
+}
+
+
+.contact-item
+{    
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+text-decoration: none;
+color: var(--title-text-color);
+}
+.contact-item.accent-color-blue{
+color: var(--accent-text-color);
+}
+
+
