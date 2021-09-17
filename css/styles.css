@@ -120,7 +120,7 @@ cursor: pointer;
 .contact-item:focus,
 .contact-item:hover,
 .footer-list-item:focus,
-.footer-list-item:hover,
+.footer-list-item:hover
 {
     color: var(--accent-text-color); 
 }
